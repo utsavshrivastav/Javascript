@@ -1,0 +1,19 @@
+<html>
+    <head></head>
+    <title>Convert kilo-meter into  meter </title>
+    <body>
+        Enter Km<input type="text" id="no1"><br>
+        <button onclick="convert()" type="button">Convert</button>
+        <br>
+        <h1 id="result"></h1>
+        <script>
+            function convert()
+            {
+                let km,m;
+                km=parseInt(document.getElementById("no1").value);
+                m=km*1000;
+                document.getElementById("result").innerHTML="Meter = "+m;
+            }
+        </script>
+    </body>
+</html>

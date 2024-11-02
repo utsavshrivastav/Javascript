@@ -1,0 +1,24 @@
+<html>
+    <head>
+    </head>
+    <title>sum</title>
+    <body>
+        Enter no1<input type="text" id="no1"><br>
+        Enter no2<input type="text" id="no2"><br>
+       <button onclick="add()" type="button">Add</button> <!--Aisa likkhne se hmlog ek button create kr denge -->
+        <h1 id="result"></h1>
+
+        <script>
+            function add()     //Function ka naam "add" hain aur function keyword hain hain idher. 
+            {
+               let a,b,c;
+
+               //Taking value from user in JavaScript.
+                a=parseInt(document.getElementById("no1").value);//aisa statement likh kr apn user se value lenge
+                b=parseInt(document.getElementById("no2").value);
+                c=a+b;
+                document.getElementById("result").innerHTML="sum = "+c;
+            }
+        </script>
+    </body>
+</html>

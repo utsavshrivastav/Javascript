@@ -1,0 +1,40 @@
+<!--html></html>
+<head></head>
+<title>doing Sum Using JS</title>
+<body>
+    <h1 id="Result"></h1>
+    <script>
+        let a=2,b=3,c,d;
+        c=a+b;
+         document.getElementById("Result").innerHTML="sum = "+c;
+        
+        //d=a*b;
+       // document.getElementById("sume").innerHTML="multiply = "+d;
+    </script>
+</body>
+-->
+
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ </head>
+ <body>
+    Enter no1<input type="text" id="no1"><br>
+    Enter no2<input type="text" id="no2"><br>
+    <button onclick="add()" type="button">Add</button>
+    <h1 id="result"></h1>
+    <script>
+        function add()
+        {
+            let a,b;
+            a=parseInt(document.getElementById("no1").value);
+            b=parseInt(document.getElementById("no2").value);
+            c=a+b;
+            document.getElementById("result").innerHTML="sum = "+c;
+        }
+    </script>
+ </body>
+ </html>
