@@ -1,0 +1,21 @@
+<html>
+    <head></head>
+    <title>Changes Image in JavaScript</title>
+    <body>
+        <image src="off.gif" onclick="on()" ondblclick="off()" id="myimg">
+
+         <!--id ka naam kuch ve de skate hain apn .just ek naam hain jo apne man se kuch vi rakh sskate hain .-->
+        <script>
+            function on()
+            {
+               document.getElementById("myimg").src="on.gif";
+               //src me image jis folder me rakha hua hain uski puri location dena padnega . toh kosis krna ki jis folder me html file hain ussi me image ko rakhan .
+
+            }
+            function off()
+            {
+                document.getElementById("myimg").src="off.gif";
+            }
+        </script>
+    </body>
+</html>
