@@ -1,0 +1,23 @@
+<html>
+<head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+<input type="password" id="pass"><i class="fa-regular fa-eye" onclick="pass_show()"></i>	
+<script>
+function pass_show()
+{
+   let a;
+   a=document.getElementById("pass");
+   if(a.type=="password")
+    {
+      document.getElementById("pass").type="text";
+    }
+    else
+     {
+     document.getElementById("pass").type="password";
+     }
+}
+</script>
+</body>
+</html>
